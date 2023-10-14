@@ -21,3 +21,9 @@ docker buildx build -t caddy_xray .
 ## run the docker image with host port 80
 
 docker run --name caddy_xray -p 80:80 -p 443:443 -d caddy_xray:latest
+
+## sample vless
+
+vless://$UUID@$DOMAIN:443/?type=ws&encryption=none&host=$DOMAIN&path=%2Fiamtrazy&security=tls&sni=$DOMAIN&fp=chrome&packetEncoding=xudp#CDN  
+
+replace $DOMAIN and $UUID with your domain and ip, set allowInsecure to true to add custom SNI (setting allowInsecure to true may make you vulnerable to MITM attacks)
