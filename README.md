@@ -22,7 +22,8 @@ docker buildx build -t caddy_xray .
 
 ## run the docker image with host port 80 and 443
 
-docker run --name caddy_xray -p 80:80 -p 443:443 -d caddy_xray:latest
+docker run -p 80:80 -p 443:443 -d caddy_xray:latest  
+this wont retain after reboot. re run the command after reboot or use docker-compose to automate procss
 
 ## sample vless
 
