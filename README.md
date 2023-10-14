@@ -3,7 +3,9 @@
 ## prerequisites - docker.io and docker-buildx
 
 sudo apt-get update && sudo apt-get install -y docker.io docker-buildx  
-sudo usermod -aG docker $USER
+sudo usermod -aG docker $USER  
+
+point the domain to server ip before starting the container
 
 ## clone this repository to a vps
 
