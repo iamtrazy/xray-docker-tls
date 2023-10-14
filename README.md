@@ -18,7 +18,7 @@ eg: nano xray-docker-tls/.env
 cd xray-docker-tls  
 docker buildx build -t caddy_xray .
 
-## run the docker image with host port 80
+## run the docker image with host port 80 and 443
 
 docker run --name caddy_xray -p 80:80 -p 443:443 -d caddy_xray:latest
 
